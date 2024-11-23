@@ -9,9 +9,9 @@ class Profile extends Model
 {
     use HasFactory;
 
-    // Define que la tabla es 'users' en lugar de 'profiles'
+    // Define que la tabla es users 
     protected $table = 'users';
-    protected $fillable = ['name', 'email', 'rol', 'password'];  // Asegúrate de incluir 'password' en $fillable
+    protected $fillable = ['name', 'email', 'rol', 'password'];  
 
-    protected $hidden = ['password'];  // Esto oculta la contraseña cuando se recupera el usuario
+    protected $hidden = ['password'];
 }

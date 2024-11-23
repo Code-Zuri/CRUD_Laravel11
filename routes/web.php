@@ -18,7 +18,7 @@ use App\Http\Controllers\ProfileController;
     Route::post('/logear', [AuthController::class, 'logear'])->name('logear');
 
 //});
-
+ 
 Route::middleware([isAuthenticated::class])->group(function () {
 //Route::middleware("auth")->group(function () {
     

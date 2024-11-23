@@ -23,6 +23,8 @@ class ProfileController extends Controller
 
     public function store(Request $request)
     {
+
+        
         $profile = new Profile(); 
         $profile -> name = $request->post('nombre');
         $profile -> email = $request->post('email');
